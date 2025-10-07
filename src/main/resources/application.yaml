@@ -1,0 +1,17 @@
+server:
+  port: 12100
+  servlet:
+    context-path: /user
+spring:
+  application:
+    name: usermgmt
+  datasource:
+    url: jdbc:mysql://localhost:3306/sftrust?useSSL=false&serverTimezone=UTC # Replace with your database name and connection parameters
+    username: root # Replace with your MySQL username
+    password: root # Replace with your MySQL password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Options: none, update, create, create-drop, validate
+    show-sql: true # Set to false in production environments
+    database-platform: org.hibernate.dialect.MySQL8Dialect # Use MySQL5Dialect for older versions
