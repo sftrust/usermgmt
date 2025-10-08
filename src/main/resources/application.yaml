@@ -12,6 +12,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: update # Options: none, update, create, create-drop, validate
+      ddl-auto: none # Options: none, update, create, create-drop, validate
     show-sql: true # Set to false in production environments
     database-platform: org.hibernate.dialect.MySQL8Dialect # Use MySQL5Dialect for older versions
